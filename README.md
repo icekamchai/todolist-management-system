@@ -1,80 +1,76 @@
-# ToDoList Management System
+# ToDoList Management System ✨
 
-[cite_start]A frontend web application for task management, inspired by Trello and Jira[cite: 2]. [cite_start]Built with React, TypeScript, and Redux, this project focuses on a clean user interface and an intuitive user experience[cite: 2].
+<p align="center">
+  <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React Badge"/>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" alt="TypeScript Badge"/>
+  <img src="https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge" alt="Vite Badge"/>
+  <img src="https://img.shields.io/badge/Redux-764ABC?logo=redux&logoColor=white&style=for-the-badge" alt="Redux Badge"/>
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="Tailwind CSS Badge"/>
+</p>
 
-![Project Screenshot](link_to_your_screenshot.png)
+A frontend web application for task management, inspired by Trello and Jira. This project showcases skills in modern frontend development, state management, and creating an intuitive user experience.
 
 ---
 
-## ✨ Features (คุณสมบัติ)
+## 🌟 Features
 
 ### Core Features
 
-- [cite_start]**User Authentication** [cite: 6]
-  - [cite_start]User registration with email and password[cite: 8].
-  - [cite_start]Strict password validation using Regex[cite: 9, 10, 11, 12, 13, 14].
-  - [cite_start]User sign-in with registered credentials[cite: 15].
-- [cite_start]**Task Management (CRUD)** [cite: 17]
-  - [cite_start]Create, Read, Update, and Delete tasks[cite: 18, 19, 20].
-  - [cite_start]View tasks in a board format[cite: 18].
-- [cite_start]**Task Categorization** [cite: 22]
-  - [cite_start]Create and manage custom categories (lists)[cite: 23].
-  - [cite_start]Display the total number of tasks in each category[cite: 23].
+- **User Authentication**: Secure registration with strict password validation (Regex) and login functionality using `localStorage` to simulate a user database.
+- **Task Management (CRUD)**: Full capabilities to create, read, update, and delete tasks.
+- **Category Management**: Users can create, rename, and delete task categories (lists).
+- **Task Count Display**: Each category header shows the total number of tasks within it.
 
-### 🌟 Bonus Features
+### Bonus Features
 
-- **Modern Dark Theme:** A polished and intuitive dark theme for a better user experience.
-- [cite_start]**Drag-and-Drop Sorting:** Rearrange tasks within and across categories by dragging and dropping them[cite: 30].
-- [cite_start]**Due Dates & Reminders:** Set due dates for tasks, with visual highlights for tasks due today (amber) and overdue tasks (red)[cite: 31, 32, 33].
-- [cite_start]**Image Uploads:** Add a cover image to each task for better visualization[cite: 34, 35].
-- [cite_start]**Search Functionality:** A real-time search bar to filter tasks by title or details[cite: 27].
-- **Detailed Task View:** Click a task to view its full details before entering edit mode.
-- **Persistent State:** User data and tasks are saved in the browser's `localStorage`.
+- **Modern Dark Theme**: A polished and intuitive dark theme, fully customized for all Ant Design components.
+- **Drag-and-Drop**: Smoothly rearrange tasks within and across categories using `@dnd-kit`. Includes a `DragOverlay` to solve visual clipping issues.
+- **Due Dates & Reminders**: Set due dates for tasks, with visual highlights for tasks due **today** (amber) and **overdue** (red).
+- **Image Uploads**: Add a cover image to each task. This feature simulates uploads by converting files to Base64 and storing them in `localStorage`.
+- **Real-time Search**: A search bar in the navbar to instantly filter tasks by title or details.
+- **Detailed Task View**: Click a task to open a "view mode" modal before switching to "edit mode", improving the user workflow.
 
 ---
 
-## 🛠️ Tech Stack (เทคโนโลยีที่ใช้)
+## 🛠️ Tech Stack
 
-- [cite_start]**Build Tool:** Vite [cite: 40]
-- [cite_start]**Frontend Framework:** React [cite: 41]
-- [cite_start]**Language:** TypeScript [cite: 42]
-- [cite_start]**State Management:** Redux [cite: 43]
-- [cite_start]**Styling:** Tailwind CSS [cite: 44]
-- [cite_start]**UI Components:** Ant Design [cite: 45]
-- [cite_start]**Toast Notifications:** React Hot Toast [cite: 46]
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **Frontend Framework:** React
+- **State Management:** Redux Toolkit
+- **Styling:** Tailwind CSS
+- **UI Components:** Ant Design
+- **Notifications:** React Hot Toast
+- **Drag & Drop:** `@dnd-kit`
 
 ---
 
-## 🚀 Getting Started (เริ่มต้นใช้งาน)
+## 🚀 Getting Started
 
-Follow these instructions to get a copy of the project up and running on your local machine.
+To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
-You need to have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed on your machine.
+- Node.js (v18 or later)
+- npm or yarn
 
 ### Installation & Running
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YourUsername/YourRepositoryName.git](https://github.com/YourUsername/YourRepositoryName.git)
+    git clone [https://github.com/icekamchai/todolist-management-system.git](https://github.com/icekamchai/todolist-management-system.git)
     ```
 2.  **Navigate to the project directory:**
     ```bash
-    cd YourRepositoryName
+    cd todolist-management-system
     ```
 3.  **Install dependencies:**
     ```bash
     npm install
     ```
 4.  **Run the development server:**
-    `bash
+    ```bash
     npm run dev
-    `
-    The application will be available at `http://localhost:5173` (or another port if 5173 is in use).
+    ```
 
----
-
-## 💡 Challenges and Learnings
-
-One of the main challenges was implementing a seamless drag-and-drop experience that allowed moving tasks between different categories, especially into empty lists. This was solved using `@dnd-kit` and a custom `DragOverlay` component to prevent visual glitches caused by CSS overflow properties. Another challenge was creating a fully consistent dark theme for the Ant Design component library, which was achieved by deeply customizing the theme using `ConfigProvider`.
+The application will be available at `http://localhost:5173` (or the next available port).
